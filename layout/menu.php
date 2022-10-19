@@ -1,6 +1,10 @@
+<?php 
+ if (isset($_SESSION['user_id'])){
+
+?>
 <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
           <div class="app-brand demo">
-            <a href="index.html" class="app-brand-link">
+            <a href="index.php" class="app-brand-link">
               <span class="app-brand-logo demo">
         
               </span>
@@ -17,7 +21,7 @@
           <ul class="menu-inner py-1">
             <!-- Dashboard -->
             <li class="menu-item active">
-              <a href="index.html" class="menu-link">
+              <a href="index.php" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-home-circle"></i>
                 <div data-i18n="Analytics">Dashboard</div>
               </a>
@@ -269,3 +273,6 @@
          
           </ul>
         </aside>
+        <?php
+ }
+		?>
