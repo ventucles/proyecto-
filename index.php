@@ -22,12 +22,11 @@ $login = new Login();
 		require_once ("conf/conexion.php");
 		/* function_home*/
 		require_once ("lib/function_home.php");
-		
 		//Inicia Control de Permisos
 		include("conf/permisos.php");
 		
 		$user_id = $_SESSION['user_id'];
-		get_cadena($user_id);
+	    get_cadena($user_id);
 		$modulo="Inicio";
 		permisos($modulo,$cadena_permisos);
 		//Finaliza Control de Permisos
@@ -35,7 +34,7 @@ $login = new Login();
 		$skin="skin-green";
 		$home=1;
 		
-		include('home.php');//Include file with the view
+		include('view/home.php');//Include file with the view
 	}
 	else
 	{
